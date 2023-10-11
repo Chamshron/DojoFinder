@@ -8,8 +8,8 @@ const EmmaMap = () => {
   const [selectedDojo, setSelectedDojo] = useState(centerCoordinates);
 
   useEffect(() => {
-    loadModules(['esri/Map', 'esri/views/MapView'], { css: true })
-      .then(([Map, MapView]) => {
+    loadModules(['esri/Map', 'esri/views/MapView', 'esri/widgets/Search','esri/Graphic', 'esri/layers/GraphicsLayer'], { css: true })
+      .then(([Map, MapView, Search, Graphic, GraphicsLayer]) => {
         const map = new Map({
           basemap: 'streets-navigation-vector'
         });
@@ -20,6 +20,9 @@ const EmmaMap = () => {
           center: centerCoordinates,
           zoom: 15
         });
+
+        const search = new Search ({ view });
+        view.ui.add(search, "top-right");
 
         view.when(() => {});
       })
@@ -44,6 +47,8 @@ const EmmaMap = () => {
         view.center = centerCoordinates;
     }
   }, [centerCoordinates]);
+
+  
 
   return (
     <div>
