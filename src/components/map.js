@@ -24,6 +24,30 @@ const EmmaMap = () => {
         const search = new Search ({ view });
         view.ui.add(search, "top-right");
 
+        const graphicsLayer = new GraphicsLayer();
+        map.add(graphicsLayer)
+
+        const point = {
+            type: "point",
+            longitude: centerCoordinates[0],
+            latitude: centerCoordinates[1]
+        }
+        const simpleMarkerSymbol = {
+            type: "simple-marker",
+            color: [255, 0, 255],
+            outline: {
+                color: [255, 255, 255],
+                width: 1
+            }
+        }
+
+        const pointGraphic = new Graphic({
+            geometry: point,
+            symbol: simpleMarkerSymbol
+        });
+
+        graphicsLayer.add(pointGraphic)
+
         view.when(() => {});
       })
       .catch((err) => console.error(err));
