@@ -6,8 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
+          <p>What Dojo do you want to locate?</p>
           <EmmaMap/>
-          <p>A map should really be above me</p>
+          <p>A map should really be above me...AND IT IS :)</p>
         </div>
       </header>
     </div>
