@@ -37,3 +37,17 @@
     transform: rotate(360deg);
   }
 }
+
+select{
+  appearance: none;
+  background-color: white;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: large;
+  cursor: inherit;
+  line-height: inherit;
+  text-align: center;
+}

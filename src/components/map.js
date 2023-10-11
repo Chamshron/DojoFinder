@@ -75,8 +75,8 @@ const EmmaMap = () => {
   
 
   return (
-    <div>
-      <select value={selectedDojo} onChange={handleDojoChange}>
+    <div className='dropdownContainer'>
+      <select className='dropdown' value={selectedDojo} onChange={handleDojoChange}>
         <option value="TaiSeiDoKai">TaiSeiDoKai</option>
         <option value="EdinburghCity">Edinburgh City</option>
         <option value="AberdeenCity">Aberdeen City</option>
