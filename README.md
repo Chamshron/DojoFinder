@@ -1,3 +1,9 @@
+<img width="673" alt="image" src="https://github.com/Chamsron/DojoFinder/assets/139380629/3b9f7a7e-a6a9-407a-b31f-a6ebeada3517">
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
